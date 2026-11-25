@@ -1,0 +1,37 @@
+{
+  "name": "tracci",
+  "appid": "",
+  "description": "Travel lifestyle app",
+  "versionName": "1.0.2",
+  "versionCode": "102",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "nvueCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    }
+  },
+  "h5": {
+    "router": {
+      "mode": "history",
+      "base": "/"
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": true,
+      "minified": true,
+      "es6": true,
+      "postcss": false
+    },
+    "usingComponents": true,
+    "__usePrivacyCheck__": true,
+    "lazyCodeLoading": "requiredComponents"
+  }
+}

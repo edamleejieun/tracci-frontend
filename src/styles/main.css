@@ -1,0 +1,35 @@
+/* 基础重置与全局样式 */
+page {
+  --tracci-brand: #4F7DFF;
+  --tracci-bg: #FFFFFF;
+  --tracci-text: #2F2A25;
+  --tracci-text-secondary: #7A746B;
+  --tracci-text-muted: #9B958C;
+  --tracci-text-disabled: #C4BEB5;
+  --tracci-border: #EDE8E2;
+  --tracci-subtle: #F7F4EF;
+  background-color: var(--tracci-bg);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Helvetica Neue',
+    Helvetica,
+    Segoe UI,
+    Arial,
+    Roboto,
+    'PingFang SC',
+    'miui',
+    'Hiragino Sans GB',
+    'Microsoft Yahei',
+    sans-serif;
+  color: var(--tracci-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 隐藏滚动条但保留滚动效果 */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Build output (Vite / uni-app)
+dist/
+dist-ssr/
+.output/
+
+# Legacy uni-app output
+unpackage/
+
+# Vite cache
+.vite/
+
+# Local-only env files (keep .env / .env.development in repo if your team shares them)
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Misc caches
+.cache/
+
+.workbuddy/
+.claude/
+.agents/

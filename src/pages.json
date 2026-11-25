@@ -1,0 +1,209 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "backgroundTextStyle": "dark",
+        "backgroundColor": "#FBFAF6"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/profile/account-security",
+      "style": {
+        "navigationBarTitleText": "账号安全",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/help-feedback/index",
+      "style": {
+        "navigationBarTitleText": "帮助与反馈",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationBarBackgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "path": "pages/login/register",
+      "style": {
+        "navigationBarTitleText": "注册账号",
+        "navigationBarBackgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "path": "pages/login/forgot-password",
+      "style": {
+        "navigationBarTitleText": "找回密码",
+        "navigationBarBackgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "path": "pages/login/change-password",
+      "style": {
+        "navigationBarTitleText": "修改密码",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/legal/terms",
+      "style": {
+        "navigationBarTitleText": "用户协议",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/legal/privacy",
+      "style": {
+        "navigationBarTitleText": "隐私政策",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/trip",
+      "pages": [
+        {
+          "path": "create",
+          "style": {
+            "navigationBarTitleText": "创建旅行",
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "navigationStyle": "custom",
+            "disableScroll": true
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "旅行详情",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "demo",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "activity-log",
+          "style": {
+            "navigationBarTitleText": "旅程动态",
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "members",
+          "style": {
+            "navigationBarTitleText": "旅行成员",
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "list",
+          "style": {
+            "navigationBarTitleText": "全部旅程",
+            "navigationBarBackgroundColor": "#FBFAF6",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": true,
+            "backgroundTextStyle": "dark",
+            "backgroundColor": "#FBFAF6"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/itinerary",
+      "pages": [
+        {
+          "path": "node-edit",
+          "style": {
+            "navigationBarTitleText": "编辑节点",
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/co-editor",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "加入旅行",
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+  "tabBar": {
+    "color": "#9B958C",
+    "selectedColor": "#4F7DFF",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home-inactive.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "static/tabbar/profile-inactive.png",
+        "selectedIconPath": "static/tabbar/profile-active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Tracci",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "wifi",
+      "packages": ["pages/trip"]
+    },
+    "pages/trip/detail": {
+      "network": "all",
+      "packages": ["pages/itinerary", "pages/co-editor"]
+    },
+    "pages/trip/create": {
+      "network": "all",
+      "packages": ["pages/itinerary"]
+    },
+    "pages/trip/members": {
+      "network": "all",
+      "packages": ["pages/co-editor"]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+dist
+node_modules
+.hbuilderx
+.vite
+unpackage
+*.local
+pnpm-lock.yaml
+package-lock.json
